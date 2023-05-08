@@ -9,7 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class BreakEvent implements Listener {
 
-    private ItemStack normalDiamondStack = new ItemStack(Material.DIAMOND,1);
+    private final ItemStack normalDiamondStack = new ItemStack(Material.DIAMOND,1);
 
     @EventHandler
     public void breakDirt (BlockBreakEvent blockBreakEvent) {
